@@ -426,7 +426,8 @@ header::before{
     background: rgba(20, 33, 42, 1);
     position: absolute;
     bottom: 40%;
-    left: 8%; 
+    left: 8%;
+    box-shadow: -10px 10px 2px rgba(226, 226, 226, 0.6);
 }
 .doing-heading{
     color: #fff;
@@ -457,3 +458,59 @@ header::before{
     letter-spacing: -0.02em;
     color: #14212A;
 }
+
+/* meetup area start */
+.meetup-area{
+    padding: 121px 0;
+}
+.user-cards{
+    margin-top: 20px;
+}
+.user-image{
+    position: relative;
+    overflow: hidden;
+}
+.user-image::before{
+    content: "";
+    width: 70%;
+    height: 30%;
+    background: rgba(255, 73, 23, 1);
+    position: absolute;
+    top: 0;
+    left: -150px;
+    transform: skew(-35deg);
+}
+.user-image::after{
+    content: "";
+    width: 85%;
+    height: 40%;
+    background: rgba(255, 73, 23, 0.6);
+    position: absolute;
+    top: 0;
+    left: -180px;
+    transform: skew(-35deg);
+}
+.user-card-link{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 1;
+}
+.user-card-link a{
+    color: #fff;
+}
+.user-heading, .user-details{
+    color: #14212A;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.user-card img{
+    border-bottom: 5px solid rgba(255, 73, 23, 0.2);
+    border-right: 5px solid rgba(255, 73, 23, 0.2);
+    border-width: 10%;
+}
+.user-card img:hover {
+    border-color: #FF4917;
+}
+
