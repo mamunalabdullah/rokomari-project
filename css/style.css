@@ -308,9 +308,8 @@ header::before{
     position: relative;
 }
 .video-section video{
-    height: 100%;
-    opacity: 0.6;
-    margin-left: 35px;   
+    width: 100%;
+    opacity: 0.6;   
 }
 
 .video-contents{
@@ -339,6 +338,13 @@ header::before{
 }
 
 /* feature area start  */
+.features-area{
+    padding: 111px 0;
+    margin-bottom: 400px;
+}
+.feature-cards{
+    margin-top: 25px;
+}
 .feature-card-one{
     background: url("../image/feature-one.jpg");
 }
@@ -362,23 +368,38 @@ header::before{
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    overflow: hidden;
+    z-index: -1;
 }
 .feature-card::before{
     content: "";
-    width: 30%;
-    height: 40%;
+    width: 200%;
+    height: 90%;
     background: rgba(255, 73, 23, 1);
     position: absolute;
     bottom: 0;
-    left: --80px;
-    transform: skew(30deg);
-    overflow: hidden;
-
+    left: -608px;
+    transform: skew(50deg);
+}
+.feature-card::after{
+    content: "";
+    width: 200%;
+    height: 90%;
+    background: rgba(255, 73, 23, 0.6);
+    position: absolute;
+    bottom: 0;
+    left: -550px;
+    transform: skew(50deg);
 }
 .feature-card-content{
     padding-top: 327px;
-    padding-left: 15px;
+    padding-left: 25px;
     padding-bottom: 35px;
+    z-index: 1;
+}
+.content-icon i{
+    color: #fff;
+    font-size: 30px;
 }
 .content-heading{
     font-weight: 600;
@@ -393,4 +414,46 @@ header::before{
     line-height: 26px;
     letter-spacing: -0.02em;
     color: #FFFFFF;
+}
+
+/* doing area start  */
+.doing-area{
+    background: rgba(245, 245, 245, 1);
+    height: 100vh;
+    position: relative;   
+}
+.doing-area-content{
+    background: rgba(20, 33, 42, 1);
+    position: absolute;
+    bottom: 40%;
+    left: 8%; 
+}
+.doing-heading{
+    color: #fff;
+}
+.doing-content ul li, .doing-content ul li a, .doing-description{
+    color: rgba(194, 217, 235, 1);
+}
+.counter-area{
+    position: absolute;
+    bottom: 5%;
+    left: 8%;
+    
+}
+.counter{
+    background: rgba(245, 245, 245, 1);
+    border: none;
+}
+.counter i{
+    color: #FF4917;
+    font-size: 35px;
+    margin-top: 10px;
+}
+.counter-title{
+    font-weight: 700;
+    font-size: 54px;
+    line-height: 57px;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: #14212A;
 }
